@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_estanciasapp/core/app_Colors.dart';
 import 'package:flutter_estanciasapp/core/text_styles.dart';
+import 'package:flutter_estanciasapp/screens/_homeuser.dart';
 
 class home extends StatefulWidget {
   const home({super.key});
@@ -44,7 +45,8 @@ class _homeState extends State<home> {
 
           ElevatedButton(
             style: ElevatedButton.styleFrom(backgroundColor: AppColors.primary, foregroundColor: AppColors.text),
-            onPressed: () {}, child: Text("Iniciar sesion"))
+            onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => homeuser()));},
+            child: Text("Iniciar sesion"))
 
         ],
       ),
