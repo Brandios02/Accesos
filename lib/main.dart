@@ -16,8 +16,9 @@ class MainApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: AppColors.backg,
         appBar: AppBar(
-          title: Text("Seguridad Estancias"),
-          backgroundColor: AppColors.primary,
+          title: Text("Seguridad Estancias", style: TextStyle(color: Colors.white),),
+          backgroundColor: AppColors.basic,
+          
         ),
         body: home() 
       ),
