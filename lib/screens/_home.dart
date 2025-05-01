@@ -68,7 +68,7 @@ class _homeState extends State<home> {
              height: 50.0 , // Alto del botón
              child: ElevatedButton(
             style: ElevatedButton.styleFrom(backgroundColor: AppColors.primary, foregroundColor: AppColors.text),
-            onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => homeuser()));},
+            onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => HomeUser()));},
             child: Text("Iniciar sesion")),
           )),
           
