@@ -25,15 +25,24 @@ class _ImgSelecState extends State<ImgSelec> {
       children: [
         Column(
           children: [
-            IconButton(onPressed: () {}, icon: 
-            ClipRRect(borderRadius: BorderRadius.circular(35),
-            child: Image.asset(
-              widget.imagePath, 
-              height: 150,
-              width: 200,
-              ), 
-            )
+            IconButton(
+            onPressed: widget.onPressed,
+            icon: Container(
+            height: 125,
+            width: 450, // ajusta a lo que necesites
+            decoration: BoxDecoration(
+            color: AppColors.primary,
+            borderRadius: BorderRadius.circular(55),
             ),
+          child: ClipRRect(
+          borderRadius: BorderRadius.circular(35),
+          child: Image.asset(
+          widget.imagePath,
+          
+      ),
+    ),
+  ),
+),
             Text(
               widget.label,
               style: const TextStyle(fontSize: 16, color: AppColors.text),

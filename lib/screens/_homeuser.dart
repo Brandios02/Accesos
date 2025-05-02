@@ -22,27 +22,38 @@ class _HomeUserState extends State<HomeUser> {
       body: Column(children: [
         Text("¿Que deseas relizar?", style: TextStyles.titleText),
           const SizedBox(height: 20),
-        Row( mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+
+        Row( mainAxisAlignment: MainAxisAlignment.center,
         children: [
           ImgSelec(
             imagePath: "assets/images/RegistrarVisita.png",
             label: "Registrar Visita",
             onPressed: () {},
             ), 
+          
+            ]
+          ),
+        Row(mainAxisAlignment: MainAxisAlignment.center,
+          children: [
           ImgSelec(
             imagePath: "assets/images/EliminarVisita.png",
             label: "Eliminar Visita",
             onPressed: () {},
               )
-            ]
-          ),
-        Row( mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        ],
+        ),
+
+        Row( mainAxisAlignment: MainAxisAlignment.center,
         children: [
           ImgSelec(
             imagePath: "assets/images/RegistrarVisita.png",
             label: "Contactar Caseta",
             onPressed: () {},
-            ), 
+            ),
+          ]
+          ),
+        Row(mainAxisAlignment: MainAxisAlignment.center,
+        children: [
           ImgSelec(
             imagePath: "assets/images/EliminarVisita.png",
             label: "Registrar Evento",
@@ -50,8 +61,8 @@ class _HomeUserState extends State<HomeUser> {
               )
             ]
           )
-        ]
-      ),
+          ],
+        ),
 
       //Button Settings
       floatingActionButton: FloatingActionButton(onPressed: () {}, 
