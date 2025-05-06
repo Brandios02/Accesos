@@ -3,6 +3,8 @@ import 'package:flutter_estanciasapp/components/imagesselector.dart';
 import 'package:flutter_estanciasapp/core/app_Colors.dart';
 import 'package:flutter_estanciasapp/components/barcustom.dart';
 import 'package:flutter_estanciasapp/core/text_styles.dart';
+import 'package:flutter_estanciasapp/screens/_RegistVisit.dart';
+
 
 
 class HomeUser extends StatefulWidget {
@@ -28,7 +30,7 @@ class _HomeUserState extends State<HomeUser> {
           ImgSelec(
             imagePath: "assets/images/RegistrarVisita.png",
             label: "Registrar Visita",
-            onPressed: () {},
+            onPressed: () {{Navigator.push(context, MaterialPageRoute(builder: (context) => RegistVisit()));}},
             ), 
           
             ]
