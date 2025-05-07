@@ -18,7 +18,7 @@ class RegistVisit extends StatelessWidget {
           Image.asset(
           "assets/images/principal.png",
           ),
-          const SizedBox(height: 15),
+          const SizedBox(height: 30),
 
           Container(
           width: 250,
@@ -43,6 +43,36 @@ class RegistVisit extends StatelessWidget {
             onChanged: null,
           ),
         ),
+
+        const SizedBox(height: 50),
+        Align(
+        alignment: Alignment.centerLeft,
+        child: Container(
+          width: 400,
+          margin: const EdgeInsets.only(left: 20, right: 20),
+          child: TextField(
+            decoration: InputDecoration(
+              labelText: 'Nombre del visitante',
+              hintText: 'Ej. Juan Pérez',
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(20),
+            ),
+          ),
+        ),
+      ),
+    ),
+    const SizedBox(height: 50),
+
+    Center( 
+          child: SizedBox( 
+            width: 250.0 , // Ancho del botón
+             height: 50.0 , // Alto del botón
+             child: ElevatedButton(
+            style: ElevatedButton.styleFrom(backgroundColor: AppColors.primary, foregroundColor: AppColors.btntxt),
+            onPressed: () {},
+            child: Text("Generar QR")),
+          )),
+
 
         ]
       ),
